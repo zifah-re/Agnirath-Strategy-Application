@@ -141,7 +141,7 @@ def run_casadi_optimizer():
         print(f"Solver message: {e}")
 
 def haversine(p1, p2):
-    """Helper function to calculate distance between two points from the DataFrame."""
+    """Calculates the great-circle distance between two points on Earth using latitude and longitude coordinates"""
     lat1, lon1 = p1['latitude'], p1['longitude']
     lat2, lon2 = p2['latitude'], p2['longitude']
     R = 6371e3
